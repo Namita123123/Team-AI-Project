@@ -1,8 +1,8 @@
 # User Interview Insights — Synthesis
 **Project:** Multi-Perspective News Aggregator  
-**Interviews:** Animesh Jain, Jyotish Sonowal  
-**Date:** August 2026  
-**Status:** Complete
+**Interviews:** Animesh Jain, Jyotish Sonowal
+**Date:** August 2026
+**Status:** Updated — prototype feedback added
 
 ---
 
@@ -113,8 +113,84 @@ Both users want personalised topics, but also want to stay aware of major world 
 
 ---
 
+---
+
+## 🖥️ Prototype Feedback (Missed in First Pass)
+
+Both participants were shown an early prototype called **"Perspective Radar"** during the interview. This section captures their direct reactions.
+
+---
+
+### Animesh — Prototype Feedback
+
+**What he liked:**
+- The card layout showing headlines was clear: *"This looks nice. It gives me the heading."*
+- Source attribution visible on the right side: *"Where is it sourcing the news from? That is also listed."* → *"That's good. Quite like it."*
+- Topic following / personalisation concept: *"I can follow some topics… all topics segregated."*
+
+**What he found missing or wanted improved:**
+
+1. **Date / timestamp on articles** — His first reaction on seeing a card was: *"I wanted to know when was this news available."* → Recency is a critical trust and relevance signal.
+
+2. **Story threading for ongoing events** — *"On an ongoing topic, do you have a thread maintained? The protest happened for 30 days — I'd like to know based on a timeline what's happening from inception till current."* → Users want continuity, not just one-off articles.
+
+3. **Expand-in-place preview (no forced deep dive)** — *"I'd like to read at least three more lines so I don't have to open each card."* → Users want a middle ground between headline and full article — a 3–5 line summary inline.
+
+4. **Overall summary per topic** — *"An overall summary giving me enough overview so I can choose to go and deep dive."*
+
+5. **Images / visual richness** — *"It's looking very plain. Maybe some images will be nice."* and *"Apart from that, this looks good — just maybe some pictures would be appreciated."*
+
+6. **Video / short-form media integration** — *"Al Jazeera is making 1.5-minute shorts. All of these people have started bite-sized content — maybe that could be associated with these cards."* → He suggested embedding short YouTube video clips alongside text summaries.
+
+7. **Unclear primary navigation** — *"Which is the primary navigation I'm looking at?"* → The prototype had tabs for "Today's Topics," "All Topics," and "Deep Dives" — Animesh found this confusing and redundant.
+
+8. **Trending / breaking news surfacing** — *"Something that's not in my topic but is gaining too much traction… a major thing in the world — that could be surfaced here."* → Users want serendipitous discovery of globally significant news outside their chosen topics.
+
+---
+
+### Jyotish — Prototype Feedback
+
+**What he liked:**
+- Content curation quality: *"I think this is curated well."*
+- The concept of perspective segments per story (economic, government etc.): *"Multiple perspectives — is this like segments that will get impacted? Good."*
+
+**What he found missing or wanted improved:**
+
+1. **Mobile-first design is critical** — *"I have stopped consuming news on laptops or computers. It's mostly on phone. So I'm seeing this after a long time — it's bringing back memories of 10 years ago."* → The desktop prototype felt unfamiliar and intimidating to him. **The product must be designed mobile-first.**
+
+2. **Visual hierarchy — no "hero story"** — *"One thing that is missing is images. The hierarchy — everything is at the same level right now. Like we used to have a hero story, a big story, and then smaller cutouts. Visually, what is my eye movement right now? I'm finding that a little tricky."* → Flat card grids without size differentiation make it hard to prioritise attention.
+
+3. **Information overload from sources shown upfront** — *"There's so much detailed analysis. Finishing one news and then going to the next one itself gets very tiring."* → Jyotish explicitly said showing all source detail upfront was overwhelming. He stopped reading news due to this fatigue. → *"Maybe not have it upfront — I would then see if I really need to trust [the source]."*
+
+4. **High-level bullet points as default** — *"If you give me just this much — very high-level bullet points — I think I'll be more than happy with that."* → This directly contradicts the prototype's depth-first approach. Users want summary-first, depth on demand.
+
+5. **Personalisation expectation** — *"Maybe this will also get curated based on what I prefer."* → Users assume and expect personalisation to kick in over time.
+
+6. **Topic breadth is overwhelming at first** — *"I don't know what to see. I mean, I'll definitely sort this with maybe if there was a headline that could be helpful."* → The prototype showed too many topics with no clear starting point for new users.
+
+---
+
+## Revised Priority Insights from Prototype Session
+
+| Insight | Source | Revised Priority |
+|---|---|---|
+| Timestamp / recency on every article | Animesh | 🔴 High — must-have |
+| Inline 3–5 line summary (no forced click) | Animesh | 🔴 High — must-have |
+| Mobile-first design | Jyotish | 🔴 High — must-have |
+| Visual hierarchy / hero story concept | Jyotish | 🔴 High — must-have |
+| Source detail hidden by default, expandable | Jyotish | 🔴 High — must-have |
+| High-level bullet points as default view | Jyotish | 🔴 High — must-have |
+| Images alongside article cards | Both | 🟡 Medium |
+| Trending / breaking news outside chosen topics | Animesh | 🟡 Medium |
+| Story timeline / thread for ongoing events | Animesh | 🟡 Medium |
+| Short-form video (YouTube Shorts / Al Jazeera) integration | Animesh | 🟢 Nice to have |
+| Navigation clarity (tabs vs. single feed) | Animesh | 🟡 Medium |
+
+---
+
 ## Next Steps
 
 - [ ] Validate MVP feature set with a third interview or prototype test
 - [ ] Proceed to solution design and user journey mapping
 - [ ] Define technical approach using Bob + Tavily MCP
+- [ ] Revisit prototype design with mobile-first, hierarchy, and summary-first principles
